@@ -1,0 +1,109 @@
+\documentclass[10pt,a4paper,openany]{book}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathpple}
+\usepackage{upgreek}
+\usepackage{mathpazo}
+\usepackage{lipsum}
+\usepackage{cite}
+\usepackage[colorlinks,linkcolor=black]{hyperref}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{savesym}
+\usepackage{amsfonts}
+\usepackage[margin=1.5in]{geometry}
+\usepackage{fancybox}
+\usepackage{fontspec}
+\usepackage{hyperref}
+
+\usepackage{fancyhdr}
+\usepackage{epigraph}
+\usepackage{caption}
+\usepackage[all]{xy}
+\usepackage{tikz}
+\usepackage{amsmath,amscd}
+\usepackage{geometry}
+\geometry{right=2.5cm,left=2.5cm,top=2.5cm,bottom=2.5cm}
+\pagestyle{fancy} %\lhead{左页眉}\chead{中间页眉}\rhead{}
+\usepackage{amsmath,amscd}
+\usepackage{bm}
+\usepackage{titlesec}%chapter1修改为第1章
+%\renewcommand{\chaptername}{第{\thechapter}章}
+%\titleformat{\chapter}[block]{\Huge\bfseries}{\chaptername\,\thechapter}{10pt}{\\}
+\titleformat{\chapter}[block]{\Huge\bfseries}{2021.12}{10pt}{}
+\usepackage[UTF8]{ctex}
+\makeatletter % `@' now normal "letter"
+\@addtoreset{equation}{section}
+\makeatother  % `@' is restored as "non-letter"
+\renewcommand\theequation{\oldstylenums{\thesection}%
+	.\oldstylenums{\arabic{equation}}}
+
+\newcommand{\abpath}{D:/大四/科研日志/website/}
+\begin{document}
+	\chapter{Week 2}
+	\section{Perface}
+	This is the first paper that I write as a doucument to introduce some new concept. To be honest, I feel of no confidence about my writing skill. Nevertheless, I have to do this, not only as a summerization of my research, but also as a practice, since I will write my own article sooner or later.
+	
+	I should feel fortunate to realize before my PhD career, that summerization is as important as learning. Everytime you learn something, you enter a beautiful house, appreciate every delicate part, and get superized about the wisdom of the archtect. But only looking does not help you build such a house yourself. To do this, you need to start from groundwork, and then build the framework, and then add decorations. To learn physics, you need to go through such a process in your mind, following the paths of pioneers. This is so called summerization.
+	
+\section{The Peierl Instability}
+You can see all derivation from the \href{\abpath ref/27_Charge_density_wave.pdf}{reference}.
+But you still have some problems. Collect them all and answer them next week.
+\section{The Derivation of Messiner's Effect}
+Next week.
+\section{The Origin of Bragg Scattering}
+Next week.
+\section{How to undersatand detailed balance?}
+There are at least two ways to understand this.
+\subsection{Assemble perspective}
+This perspective tells you detailed balance exists in equilibrium, but does not ensure the convergence. (you should further think about this and write it down next week.)
+\subsection{Probability perspective}
+All mocrostates have their probability. We list (ignore the fact of denumerability) all the states and write down there probabilities as a vector $x$. $x$ determines the macrostate. Everytime you do an update, you get a new macrostate $x'$. 
+\begin{equation}
+	x' = Ax\,,
+\end{equation}
+where $A$ is an operator satisfy some properties. When the system arrive at equilibrium, the macrostate $x^*$ satisfies
+\begin{eqnarray}
+	x^*=Ax^*.
+\end{eqnarray}
+\href{\abpath/ref/Manousiouthakis-1999-Strict-detailed-balance-is-unnecess.pdf}{reference}.
+\section{The Idea of CDW in Bosonic System}
+The rough idea about the formation of CDW in bosonic system is given by Prof.\ Wei during a discussion with us group members. When there are proper interaction $U$ between electrons, compared with the hopping parameter $t$, the electron will be localized in supercells and thus form a change order in space. The electron can freely hop whtnin the supercell, but are hard to hop to the nearing supercell because of the renormalized $\widetilde{U}$.
+
+While Xinyi and Xinyao have done the analysis on $2\times2$ supercell respectively in cubic and triangular lattice, seeing some very complex result without clear physical meaning, I come up some basic problem.
+
+\begin{itemize}
+	\item The CDW is explained by the instability near Fermi surface for Fermi liquid, but there is no such concept in bosonic system. The question is, can we give a experimental definition of CDW. 
+	\item Under what condition does there exist CDW? What kind of material, and what kind of temperature?
+	\item What is the compitition between CDW and superfluid? Why such competition?
+	\item I don not understand why $1/4$ filling can have CDW. Why do not electrons flow freely? (This question itself shows question.)
+\end{itemize}
+
+\chapter{Week 3}
+\section{Plan}
+What is most important this week? Tuesday afternoon, you still have to serve as a teaching assistant. Wednesday afternoon, you will have the group meeting. The only thing you can report is the Meissner's effect. But you absolutely need to discuss first with Tony or someone else.
+\begin{itemize}
+	\item[***] There still remains some questions you need to answer. Why Londons' paper is of enough importance to be published? What is London Moment? Why is it the same case in rotating frame?
+	\item[**] Talk about the results of QMC with Wei, do more calculation. Convince him that the question is hard to deal using other method. (How?\footnote{It is not hard to realize that, if we know the proportion of each winding number, why we need to do QMC anymore? })
+	\item Find the answers of all unsolved questions in Week2.
+	\item Finish reading two materials, Annett and CDW note.
+\end{itemize}
+\section{Summary}
+This is a week of gaming. I have only done few things, though I got a lot of fun.
+\subsection{QMC result}
+The \href{\abpath notes/parallel_tempring.pdf}{result} is ...
+\subsection{The retardation effect}
+\subsection{The CDW in bosonic system}
+
+\chapter{Week 4}
+\section{Plan}
+You still need to finish the plan made in Week 2. Meanwile, there are another things to think about.
+\begin{itemize}
+	\item[***] QMC calculation is done under certain temeperature. To extrapolate the zero-temperature behavior, we need to calculate under several different temperature. On the other hand, we can detect whether CDW occurs in the jamming region by measuring the density-density correlation function.
+\end{itemize}
+
+
+
+
+
+\end{document}
